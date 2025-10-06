@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media (max-width: 600px) {
+  main h1 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+  }
+  main p, .card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .navbar { padding-block: .5rem; }
+}
+
+/* ====== TABLET (601px–1024px) ======
+   Objetivo: 2 columnas (grid md=6) y mejor espaciado.
+*/
+@media (min-width: 601px) and (max-width: 1024px) {
+  main h1 { font-size: 2.3rem; }
+  .card-title { font-size: 1.15rem; }
+  section#section { padding-block: 3rem; }
+}
+
+/* ====== ESCRITORIO (>1024px) ======
+   Objetivo: 3 columnas (grid lg=4) y proporciones equilibradas.
+*/
+@media (min-width: 1025px) {
+  main h1 { font-size: 2.6rem; }
+  .card-title { font-size: 1.2rem; }
+  .container { max-width: 1140px; }
+}
